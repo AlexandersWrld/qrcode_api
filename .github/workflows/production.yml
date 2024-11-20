@@ -58,9 +58,9 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: alexanderswrld/devops_demo:${{ github.sha }} # Change 'woffee' to your DockerHub username
+          tags: alexanderswrld/qrcode_api:${{ github.sha }} # Change 'woffee' to your DockerHub username
           platforms: linux/amd64,linux/arm64 
-          cache-from: type=registry,ref=alexanderswrld/devops_demo:cache # Change 'woffee' to your DockerHub username
+          cache-from: type=registry,ref=alexanderswrld/qrcode_api:cache # Change 'woffee' to your DockerHub username
           cache-to: type=inline,mode=max
           
       # - name: Scan the Docker image
